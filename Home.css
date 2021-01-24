@@ -1,0 +1,91 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ .min-div{}
+ .header-div{
+     background: #34495e;
+ }
+ .header-div ul{
+    text-align: center;
+ }
+ .header-div ul li{
+     display: inline-block;
+     margin-left: -4px;
+ }
+ .header-div ul li a{
+    text-decoration: none;
+    padding: 10px 15px; 
+    font-size: 20px;
+    color: #fff;
+    border-right: 1px solid #ddd;
+    display: inline-block;
+ }
+ .header-div ul li:first-child a{
+     border-left: 1px solid #ddd;
+ }
+ .header-div ul li:hover > a{
+     background: #3498db;
+
+ } 
+ /* dropdonw part */
+ .header-div ul li{
+     position: relative;
+ }
+ .header-div ul li ul{
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100px;
+     background: #1abc9c;
+     transition: .4s;
+ }
+ .header-div ul li ul li{
+     display: block;
+     margin-left: 0;
+ }
+ .header-div ul li ul li a{
+     display: block;
+     border-right: none;
+     border-bottom: 1px solid #ddd;
+ }
+ .header-div ul li ul li:first-child a{
+     border-top: 1px solid #ddd;
+ }
+ .header-div ul li ul li a:first-child{
+     border-left: none;
+ }
+ .header-div ul li ul{
+     opacity: 0;
+     visibility: hidden;
+     transform: scaley(0);
+     transform-origin: top center;
+ }
+ .header-div ul li:hover ul{
+     opacity: 1;
+     visibility: visible;
+     transform: scaley(1);
+ }
+ .footer{
+     background: #9b59b6;
+     padding: 10px 0;
+ }
+ .footer ul{
+     text-align: center;
+ }
+ .footer ul li{
+     display: inline-block;
+     padding: 10px;
+     font-size: 25px;
+     margin-left: 10px;
+     margin-right: -5px;
+ }
+ .footer ul li a{
+    color: #fff;
+    background: #e67e22;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 72px;
+    margin-left: 10px;
